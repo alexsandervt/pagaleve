@@ -1,11 +1,12 @@
 :root {
-  --background: #ececec;
-  --primary: #27ae60;
-  --secondary: #6fcf97;
+  --primary: #6e41e2;
+  --secondary: #472c8a;
   --white: #fff;
-  --alert: #d00000;
-  --title: #263238;
-  --text: #767676;
+  --box: #f5f5f5;
+  --bg: #fafafa;
+  --alert: #db524e;
+  --line: #6f41e24d;
+  --text: #111;
 }
 
 * {
@@ -24,7 +25,7 @@ html {
 }
 
 body {
-  background: var(--background);
+  background: var(--bg);
   -webkit-font-smoothing: antialiased;
 }
 
@@ -44,8 +45,4 @@ h5,
 h6,
 strong {
   font-weight: 700;
-}
-
-button {
-  cursor: pointer;
 }

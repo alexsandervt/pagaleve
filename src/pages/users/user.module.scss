@@ -1,0 +1,46 @@
+.user {
+  width: 1350px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+
+  padding: 3rem;
+
+  .perfil {
+    background: var(--primary);
+    padding: 5rem 2rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    h2 {
+      color: var(--white);
+      font-size: 2rem;
+    }
+    span {
+      color: var(--white);
+    }
+    ul {
+      color: var(--white);
+      margin-top: 1rem;
+      list-style: none;
+    }
+  }
+
+  .info {
+    background: var(--white);
+    color: var(--primary);
+    border: 1px solid var(--line);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+
+    p {
+      margin-top: 1rem;
+    }
+  }
+}

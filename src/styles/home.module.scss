@@ -1,0 +1,88 @@
+.homepage {
+  padding: 2rem;
+  height: calc(100vh - 6.5rem);
+  overflow-y: scroll;
+  width: 1350px;
+  margin: 0 auto;
+
+  h2 {
+    padding-top: 3rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary);
+  }
+  a {
+    text-decoration: none;
+  }
+}
+.latestUsers {
+  ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  li {
+    background: var(--box);
+    border: 1px solid var(--line);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  .usersDetails {
+    flex: 1;
+    margin-left: 1rem;
+
+    a {
+      display: block;
+      color: var(--secondary);
+      font-family: "Montserrat", sans-serif;
+      font-weight: 700;
+      line-height: 1.4rem;
+      text-decoration: none;
+    }
+    &:hover {
+      text-decoration: underline;
+    }
+
+    p {
+      font-size: 0.9rem;
+      margin-top: 0.5rem;
+      max-width: 70%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    span {
+      display: inline;
+      margin-top: 0.5rem;
+      font-size: 0.75rem;
+
+      &:last-child {
+        margin-left: 0.5rem;
+        padding-left: 0.5rem;
+        position: relative;
+      }
+    }
+  }
+  .more {
+    background: var(--secondary);
+
+    border: 0;
+    border-radius: 0.25rem;
+
+    height: 3rem;
+    padding: 0 2rem;
+
+    color: var(--white);
+    font-weight: 700;
+    font-size: 1rem;
+
+    transition: filter 0.2s;
+
+    &:hover {
+      filter: brightness(0.9);
+    }
+  }
+}
