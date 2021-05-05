@@ -1,7 +1,12 @@
+import styles from './styles.module.scss'
+
 export function Header(){
   return(
-    <header>
-      <h1>Topo do site</h1>
+    <header className={styles.headerContainer}>
+      <img src="logo.svg" alt="PagaLeva"/>
+
+      <button> Clientes</button>
+
     </header>
   )
 }
