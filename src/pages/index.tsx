@@ -1,15 +1,20 @@
-export default function Home(props) {
-  return <h1>Teste</h1>;
+export default function Home(props){
+  return (
+    <div>
+      <h1>Index</h1>
+      <p>{JSON.stringify(props.users)}</p>
+    </div>
+  )
 }
 
-export async function getSaticProps(){
-  const response = await fetch("http://localhost:3333/users")
+export async function getStaticProps() {
+  const response = await fetch('http://localhost:3333/users')
   const data = await response.json()
 
   return {
     props: {
       users: data,
     },
-    revalidate: 60 * 60 *8,
+    revalidate: 60 * 60 * 8
   }
 }
